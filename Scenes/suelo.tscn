@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bevggxqlqybqi"]
+
+[ext_resource type="Texture2D" uid="uid://4os374r5sl8j" path="res://Assets/Suelo assets.png" id="1_fnpl4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kfdvq"]
+texture = ExtResource("1_fnpl4")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_iwyd3"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetAtlasSource_kfdvq")
+
+[node name="Suelo" type="TileMapLayer"]
+tile_set = SubResource("TileSet_iwyd3")
