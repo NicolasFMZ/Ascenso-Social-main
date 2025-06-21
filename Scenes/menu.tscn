@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://o8ke8u2igsh0" path="res://Scenes/custom_button.tscn" id="1_1rerr"]
 [ext_resource type="Script" uid="uid://cyxfo6d66aje5" path="res://Script/menu.gd" id="1_xhh6f"]
-[ext_resource type="Texture2D" uid="uid://bxe10v4xaneg2" path="res://Assets/Ascenso social.png" id="2_cayip"]
+[ext_resource type="VideoStream" uid="uid://cjiv6t03shb2p" path="res://Assets/Sprite personaje/Ascenso-social1.ogv" id="3_cayip"]
 
 [sub_resource type="Theme" id="Theme_u4yt8"]
 MarginContainer/constants/margin_bottom = 10
@@ -20,6 +20,20 @@ grow_vertical = 2
 theme = SubResource("Theme_u4yt8")
 script = ExtResource("1_xhh6f")
 
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+stream = ExtResource("3_cayip")
+autoplay = true
+expand = true
+loop = true
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -36,17 +50,6 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
-position = Vector2(111.732, 60.0371)
-scale = Vector2(1.12552, 0.622975)
-texture = ExtResource("2_cayip")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Las Cronicas de un Pasante
-"
 
 [node name="StartGame" parent="MarginContainer/VBoxContainer" instance=ExtResource("1_1rerr")]
 layout_mode = 2

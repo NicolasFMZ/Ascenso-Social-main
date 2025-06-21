@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node2D
 
 @onready var boton_aceptar  = $"Imagen del cartel"/BotonAceptar
 @onready var boton_rechazar = $"Imagen del cartel"/BotonRechazar

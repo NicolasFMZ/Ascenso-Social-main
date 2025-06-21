@@ -13,7 +13,6 @@ config_version=5
 config/name="Ascenso Social"
 run/main_scene="uid://r7vt3766f7t1"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://Assets/icon.svg"
 
 [input]
 
