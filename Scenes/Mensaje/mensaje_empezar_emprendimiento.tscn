@@ -8,10 +8,10 @@ scale = Vector2(0.54613, 0.54613)
 script = ExtResource("1_kr2a8")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -260.0
-offset_top = -156.0
-offset_right = 660.0
-offset_bottom = 416.0
+offset_left = -261.842
+offset_top = 84.229
+offset_right = 658.158
+offset_bottom = 656.229
 scale = Vector2(0.566653, 0.566653)
 texture = ExtResource("1_mnqt1")
 
