@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://r7vt3766f7t1"]
+[gd_scene load_steps=7 format=3 uid="uid://r7vt3766f7t1"]
 
 [ext_resource type="PackedScene" uid="uid://o8ke8u2igsh0" path="res://Scenes/custom_button.tscn" id="1_1rerr"]
 [ext_resource type="Script" uid="uid://cyxfo6d66aje5" path="res://Script/menu.gd" id="1_xhh6f"]
 [ext_resource type="VideoStream" uid="uid://cjiv6t03shb2p" path="res://Assets/Sprite personaje/Ascenso-social1.ogv" id="3_cayip"]
+[ext_resource type="AudioStream" uid="uid://digtm4rm6w71j" path="res://Musica/Cancion menu.mp3" id="4_158mb"]
+[ext_resource type="Script" uid="uid://cu4yoycbej123" path="res://Script/music_player.gd" id="4_wwsa2"]
 
 [sub_resource type="Theme" id="Theme_u4yt8"]
 MarginContainer/constants/margin_bottom = 10
@@ -60,6 +62,12 @@ text = "START GAME"
 layout_mode = 2
 size_flags_horizontal = 4
 text = "EXIT"
+
+[node name="MusicPlayer" type="Node" parent="."]
+script = ExtResource("4_wwsa2")
+
+[node name="Player" type="AudioStreamPlayer" parent="MusicPlayer"]
+stream = ExtResource("4_158mb")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
