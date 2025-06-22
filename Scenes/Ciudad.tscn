@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhkd1swqquax1"]
+[gd_scene load_steps=7 format=3 uid="uid://bhkd1swqquax1"]
 
+[ext_resource type="Script" uid="uid://cx61lhf5lsy6e" path="res://Script/ciudad.gd" id="1_4fk5f"]
 [ext_resource type="Texture2D" uid="uid://fjwrjt8ei8a7" path="res://Assets/Ciudad.png" id="1_prvgo"]
 [ext_resource type="PackedScene" uid="uid://ba056fgoirn2o" path="res://Scenes/Personaje.tscn" id="2_jlpkk"]
 [ext_resource type="Script" uid="uid://gxls75stocjk" path="res://Script/Ciudad_Puerta_Oficina.gd" id="3_jlpkk"]
@@ -10,6 +11,7 @@
 size = Vector2(254.5, 238)
 
 [node name="Ciudad" type="Node2D"]
+script = ExtResource("1_4fk5f")
 
 [node name="Ciudad" type="Sprite2D" parent="."]
 position = Vector2(187, -211)
